@@ -21,11 +21,7 @@ class Board():
                 return (col, row)
             if grill_number == self.grill[row][col]:
                 self.grill = player1
-        coordinates(player1)
-
-
-    
-         
+        coordinates(player1)        
 board = Board()
 
 while True:
