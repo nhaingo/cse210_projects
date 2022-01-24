@@ -11,11 +11,6 @@ def main():
     player1 = "X"
     player2 = "O"
     display_grill(grill)
-    while not (is_winner(board) or is_draw(board)):
-        display_board(board)
-        make_move(player, board)
-        player = next_player(player)
-    display_board(board)
     print("Good game. Thanks for playing!") 
     player_turn = current_player('_', player1, player2)
     player_input(player_turn, grill)
