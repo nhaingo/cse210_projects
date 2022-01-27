@@ -5,7 +5,7 @@ def main():
 #Create a list of list ([1,2,3], [4,5,6], [7,8,9]) that will be stored in a variable called grill
     player1 = "X"
     player2 = "O"
-    player_turn = current_player('', player1, player2)
+    player_turn = current_player(player1, player2)
     grill = [
             [1, 2, 3],
             [4, 5, 6],
@@ -17,11 +17,11 @@ def main():
     #display grill until condition for winning game is met
     # if there is a winner print message
     player_input(player_turn, grill)
+    if player_turn
     
     while not (check_winner(grill) or slot_taken(grill, player1, player2)):
         display_grill(grill)
         player_input(player_turn, grill) 
-        current_player('_', player1, player2)
     display_grill(grill)
     while (check_winner(grill)) == True:
         print("We have a win! Game is Over! Thanks for playing")
@@ -38,11 +38,8 @@ def display_grill(grill):
         print()
 # Define the function current_player that takes three parameters: current, player1 and player2 (==> toggle player)
 #Return X if ' ' or player 2, and return O if player 1
-def current_player(current, player1, player2):
-    if current == "" or current == player2:
-        return player1
-    elif current == player1:
-        return player2
+def current_player(player1, player2):
+    
 #Prompt user to input an integer. The number to choose is one of the number displayed in the grill (==> make a move)
 #Call the function player_input that takes two parameters: player_turn, gri1ll
 #Use if statement to compare number from input with the number on the grill. The function should replace the number on the grill with X or O from the function current_player() 
